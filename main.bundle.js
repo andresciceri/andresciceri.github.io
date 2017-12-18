@@ -48,15 +48,20 @@ module.exports = "<div id=\"container\">\n  <app-left-panel></app-left-panel>\n 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_angulartics2_ga__ = __webpack_require__("../../../../angulartics2/ga/index.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
 
 var AppComponent = (function () {
-    function AppComponent() {
+    function AppComponent(angulartics2GoogleAnalytics) {
         this.title = 'app';
     }
     AppComponent = __decorate([
@@ -64,7 +69,8 @@ var AppComponent = (function () {
             selector: 'app-root',
             template: __webpack_require__("../../../../../src/app/app.component.html"),
             styles: [__webpack_require__("../../../../../src/app/app.component.css")]
-        })
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_angulartics2_ga__["a" /* Angulartics2GoogleAnalytics */]])
     ], AppComponent);
     return AppComponent;
 }());
@@ -83,13 +89,15 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_primeng_primeng__ = __webpack_require__("../../../../primeng/primeng.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_primeng_primeng___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_primeng_primeng__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_markdown__ = __webpack_require__("../../../../angular2-markdown/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_routing__ = __webpack_require__("../../../../../src/app/app.routing.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__left_panel_left_panel_component__ = __webpack_require__("../../../../../src/app/left-panel/left-panel.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__content_content_component__ = __webpack_require__("../../../../../src/app/content/content.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__post_list_post_list_component__ = __webpack_require__("../../../../../src/app/post-list/post-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__article_page_article_page_component__ = __webpack_require__("../../../../../src/app/article-page/article-page.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__page_pipes_pipe__ = __webpack_require__("../../../../../src/app/page-pipes.pipe.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angulartics2__ = __webpack_require__("../../../../angulartics2/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_angulartics2_ga__ = __webpack_require__("../../../../angulartics2/ga/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_routing__ = __webpack_require__("../../../../../src/app/app.routing.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__left_panel_left_panel_component__ = __webpack_require__("../../../../../src/app/left-panel/left-panel.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__content_content_component__ = __webpack_require__("../../../../../src/app/content/content.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__post_list_post_list_component__ = __webpack_require__("../../../../../src/app/post-list/post-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__article_page_article_page_component__ = __webpack_require__("../../../../../src/app/article-page/article-page.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__page_pipes_pipe__ = __webpack_require__("../../../../../src/app/page-pipes.pipe.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -107,28 +115,31 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */],
-                __WEBPACK_IMPORTED_MODULE_6__left_panel_left_panel_component__["a" /* LeftPanelComponent */],
-                __WEBPACK_IMPORTED_MODULE_7__content_content_component__["a" /* ContentComponent */],
-                __WEBPACK_IMPORTED_MODULE_8__post_list_post_list_component__["a" /* PostListComponent */],
-                __WEBPACK_IMPORTED_MODULE_9__article_page_article_page_component__["a" /* ArticlePageComponent */],
-                __WEBPACK_IMPORTED_MODULE_10__page_pipes_pipe__["a" /* PagePipesPipe */],
-                __WEBPACK_IMPORTED_MODULE_10__page_pipes_pipe__["b" /* ReversePipe */]
+                __WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* AppComponent */],
+                __WEBPACK_IMPORTED_MODULE_8__left_panel_left_panel_component__["a" /* LeftPanelComponent */],
+                __WEBPACK_IMPORTED_MODULE_9__content_content_component__["a" /* ContentComponent */],
+                __WEBPACK_IMPORTED_MODULE_10__post_list_post_list_component__["a" /* PostListComponent */],
+                __WEBPACK_IMPORTED_MODULE_11__article_page_article_page_component__["a" /* ArticlePageComponent */],
+                __WEBPACK_IMPORTED_MODULE_12__page_pipes_pipe__["a" /* PagePipesPipe */],
+                __WEBPACK_IMPORTED_MODULE_12__page_pipes_pipe__["b" /* ReversePipe */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["BrowserModule"],
                 __WEBPACK_IMPORTED_MODULE_2_primeng_primeng__["TabViewModule"],
                 __WEBPACK_IMPORTED_MODULE_3_angular2_markdown__["a" /* MarkdownModule */].forRoot(),
-                __WEBPACK_IMPORTED_MODULE_4__app_routing__["a" /* routing */]
+                __WEBPACK_IMPORTED_MODULE_6__app_routing__["a" /* routing */],
+                __WEBPACK_IMPORTED_MODULE_4_angulartics2__["b" /* Angulartics2Module */].forRoot([__WEBPACK_IMPORTED_MODULE_5_angulartics2_ga__["a" /* Angulartics2GoogleAnalytics */]])
             ],
             providers: [],
-            bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
+            bootstrap: [__WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* AppComponent */]]
         })
     ], AppModule);
     return AppModule;
@@ -447,7 +458,15 @@ var pageRoutes = [
         path: 'angular-cli.md',
         type: 'posts',
         date: '2017-04-17 18:30:34',
-        tags: ['Angular 2']
+        tags: ['Angular']
+    },
+    {
+        id: 5,
+        title: 'Prueba tus servicios en Angular con In Memory Web API',
+        path: 'memory-web-api.md',
+        type: 'posts',
+        date: '2017-12-17 3:00:00',
+        tags: ['Angular']
     }
 ];
 
